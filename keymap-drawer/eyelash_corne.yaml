@@ -69,9 +69,9 @@ layers:
   - '#'
   - $
   - '%'
-  - RGB COLOR HSB(343,98,52)
+  - RGB COLOR HSB(360,98,52)
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB COLOR HSB(154,100,50)
+  - RGB COLOR HSB(117,100,50)
   - ^
   - '&'
   - '*'
