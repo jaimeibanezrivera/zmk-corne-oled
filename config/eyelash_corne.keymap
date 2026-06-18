@@ -115,7 +115,9 @@
                                                    &mo 2         &mo 1              &kp ENTER                                                                 &kp SPACE  &mo 3         &HMR RMETA UNDERSCORE
             >;
 
-            sensor-bindings = <&scroll_encoder>, <&rsr_trans>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP K_VOLUME_DOWN>,
+                <&rsr_trans>;
         };
 
         lower_layer {
@@ -133,10 +135,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&kp F12     &kp F1  &kp F2            &kp F3        &kp F4           &kp F5                        &trans          &kp F6           &kp F7             &kp F8           &kp F9  &kp F10       &kp F11
-&trans      &trans  &kp K_PLAY_PAUSE  &kp C_VOL_UP  &kp C_VOLUME_UP  &kp C_MUTE            &trans  &trans  &trans  &none            &kp PAGE_DOWN      &kp PAGE_UP      &none   &bt BT_SEL 0  &bt BT_SEL 1
-&bt BT_CLR  &trans  &trans            &none         &none            &none       &trans            &trans          &kp PRINTSCREEN  &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &none   &bt BT_SEL 2  &bt BT_SEL 3
-                                      &trans        &trans           &kp SPACE                                     &kp RET          &trans             &kp RIGHT_ALT
+&kp F12     &kp F1  &kp F2            &kp F3        &kp F4             &kp F5                        &trans          &kp F6           &kp F7             &kp F8           &kp F9  &kp F10       &kp F11
+&trans      &trans  &kp K_PLAY_PAUSE  &kp C_VOL_UP  &kp C_VOLUME_DOWN  &kp C_MUTE            &trans  &trans  &trans  &none            &kp PAGE_DOWN      &kp PAGE_UP      &none   &bt BT_SEL 0  &bt BT_SEL 1
+&bt BT_CLR  &trans  &trans            &none         &none              &none       &trans            &trans          &kp PRINTSCREEN  &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &none   &bt BT_SEL 2  &bt BT_SEL 3
+                                      &trans        &trans             &kp SPACE                                     &kp RET          &trans             &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
